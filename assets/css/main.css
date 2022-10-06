@@ -7,4 +7,9 @@
   height: 30px;
   padding: 0;
   background-image: url(/img/bar_button.png);
+}
+
+#mainImg p img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
