@@ -56,6 +56,9 @@ header .nav ul li span img {
   cursor: pointer;
   z-index: 1;
 }
+.newColor:hover .newColorTxt {
+  transform: translate(8px, 8px);
+}
 .newColor::after {
   content: "";
   width: 11.4vw;
@@ -63,8 +66,8 @@ header .nav ul li span img {
   border: solid 2px black;
   background-color: gray;
   position: absolute;
-  top: 10px;
-  right: -10px;
+  top: 8px;
+  right: -8px;
   z-index: -1;
 }
 
@@ -74,9 +77,17 @@ header .nav ul li span img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease-in-out;
 }
 .newColorTxt img {
   width: 8.8vw;
   padding-bottom: 0.7vw;
   margin-top: -1.4vw;
+}
+
+.subright .btn .arr-right {
+  font-size: 14px;
+}
+.subright .btn .arr-right::after {
+  content: "";
 }/*# sourceMappingURL=main.css.map */
