@@ -34,21 +34,31 @@ header {
 
     .menu {
         display: flex;
+        justify-content: space-between;
         background-color: #d7d9db;
 
         padding: 0 5vw
-        
-        .logo {
-            
-        }
-
-        .nav {
-            ul {
-                display: flex;
-            }
-        }
-
-
     }
 
+
+    .nav {
+        ul {
+            display: flex;
+
+            li{
+                text-align: center;
+                span{
+                    img{
+                        width: 24px;
+                        height: 26px;
+                    }
+                }
+                
+            }
+        }
+    }
 }
+
+
+
+
