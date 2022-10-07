@@ -1,39 +1,38 @@
-header .logoarea {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 10px;
-}
-header .logoarea .suzukilogo {
-  display: inline-block;
-  padding: 9px 0;
-}
-header .logoarea .right {
-  display: flex;
-  align-items: center;
-  margin: 0 0 0 auto;
-}
-header .logoarea .right .sarchbox {
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  height: 30px;
-  border-radius: 5px 0 0 5px !important;
-}
-header .logoarea .mf_finder_searchBox_submit {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  background-image: url(/img/bar_button.png);
-  margin-right: 10px;
-}
-header .menu {
-  display: flex;
-  background-color: #d7d9db;
-}
-header .menu .nav ul {
-  display: flex;
-}
-
 #mainImg p img {
   width: 100%;
   height: auto;
+}
+
+.newColor {
+  width: 11.4vw;
+  height: 11.4vw;
+  position: absolute;
+  top: 10vw;
+  right: 10vw;
+  cursor: pointer;
+  z-index: 1;
+}
+.newColor::after {
+  content: "";
+  width: 11.4vw;
+  height: 11.4vw;
+  border: solid 2px black;
+  background-color: gray;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  z-index: -1;
+}
+
+.newColorTxt {
+  border: solid 2px black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newColorTxt img {
+  width: 8.8vw;
+  padding-bottom: 0.7vw;
+  margin-top: -1.4vw;
 }/*# sourceMappingURL=main.css.map */

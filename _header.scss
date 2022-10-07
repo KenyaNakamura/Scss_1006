@@ -19,7 +19,7 @@ header {
                 padding: 0.5rem;
                 height: 30px;
                 border-radius: 5px 0 0 5px !important;
-                
+
             }
         }
 
@@ -32,15 +32,18 @@ header {
         }
     }
 
-    .menu{
+    .menu {
         display: flex;
         background-color: #d7d9db;
-        padding: 0 5vw
-        .logo{
 
+        padding: 0 5vw
+        
+        .logo {
+            
         }
-        .nav{
-            ul{
+
+        .nav {
+            ul {
                 display: flex;
             }
         }
