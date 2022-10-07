@@ -1,12 +1,36 @@
-.sarchbox {
-  border: 1px solid #ddd;
+header .logoarea {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
 }
-
-.mf_finder_searchBox_submit {
+header .logoarea .suzukilogo {
+  display: inline-block;
+  padding: 9px 0;
+}
+header .logoarea .right {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+header .logoarea .right .sarchbox {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  height: 30px;
+  border-radius: 5px 0 0 5px !important;
+}
+header .logoarea .mf_finder_searchBox_submit {
   width: 30px;
   height: 30px;
   padding: 0;
   background-image: url(/img/bar_button.png);
+  margin-right: 10px;
+}
+header .menu {
+  display: flex;
+  background-color: #d7d9db;
+}
+header .menu .nav ul {
+  display: flex;
 }
 
 #mainImg p img {
