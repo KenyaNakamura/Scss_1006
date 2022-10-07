@@ -1,6 +1,48 @@
 // mainImg　ここから
-#mainImg p img{
+#mainImg p img {
     width: 100%;
     height: auto;
 }
+
+.newColor {
+    width: 11.4vw;
+    height: 11.4vw;
+    position: absolute;
+    // 位置調整する
+    top: 10vw;
+    right: 10vw;
+    cursor: pointer;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        width: 11.4vw;
+        height: 11.4vw;
+        border: solid 2px black;
+        background-color: gray;
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        z-index: -1;
+
+    }
+
+}
+
+.newColorTxt {
+    border: solid 2px black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 8.8vw;
+        padding-bottom: 0.7vw;
+        margin-top: -1.4vw;
+    }
+
+
+}
+
 //　mainImg ここまで
