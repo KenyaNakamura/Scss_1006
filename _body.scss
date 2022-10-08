@@ -54,32 +54,57 @@
 //　mainImg ここまで
 
 // sub-contents ここから 
-.subright {
+#sub-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 
+    .subleft-wrap {
+        border-right: solid 1px lightgrey;
+        width: 50%;
+        height: auto;
+        padding-right: 10px;
+    }
+
+    .subleft img {
+        width: 100%;
+        height: auto;
+        border: solid 1px lightgrey;
+        border-radius: 5px;
+    }
+
+    .subright-wrap {
+        width: 50%;
+        height: auto;
+        padding-left: 10px;
+    }
 
     .btn {
-        // border: solid 1px black;
-        // border-radius: 5px;
-        // // display: block;
-        // width: 100%;
-        // text-align: center;
-        // padding: 10px 0;
+        font-size: 16px;
+        border: solid 1px lightgrey;
+        border-radius: 5px;
+        padding: 5px 0;
+        text-align: center;
 
-        .arr-right {
-            font-size: 14px;
 
-            &::after {
-                content: '';
-                // // display: inline-block;
-                // width: 15px;
-                // height: 5px;
-                // background: url(./img/arr-right.png);
-            }
-        }
+    }
+
+    .btn01,
+    .btn02 {
+        margin-bottom: 10px;
     }
 
 }
 
+span::after {
+
+    content: url(./img/arr-right.png);
+    width: 16px;
+}
 
 // sub-contents ここまで   
 
