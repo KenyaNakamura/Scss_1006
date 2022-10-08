@@ -96,6 +96,10 @@ header .nav ul li a .img3 {
   opacity: 0;
 }
 
+#main {
+  position: relative;
+}
+
 #mainImg p img {
   width: 100%;
   height: auto;
@@ -105,8 +109,8 @@ header .nav ul li a .img3 {
   width: 11.4vw;
   height: 11.4vw;
   position: absolute;
-  top: 10vw;
-  right: 10vw;
+  top: -38vw;
+  right: 5vw;
   cursor: pointer;
   z-index: 1;
 }
@@ -186,23 +190,93 @@ span::after {
   text-align: center;
 }
 #tvcm .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#tvcm .container .top {
+  padding-top: 80px;
   display: block;
 }
-#tvcm .container .title h1 {
-  width: 100%;
+#tvcm .container .top .title h1 {
+  width: 489px;
+  margin: 0 auto;
 }
-#tvcm .container .cmmovie {
+#tvcm .container .top .cmmovie {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 41px;
+  justify-content: center;
+  align-items: center;
 }
-#tvcm .container .cmmovie .cmpos {
+#tvcm .container .top .cmmovie .movie-right {
+  width: 39%;
+  margin-left: 3%;
+  text-align: left;
+}
+#tvcm .container .top .cmmovie .movie-right h2 {
+  font-weight: bold;
+}
+#tvcm .container .top .cmmovie a {
+  width: 40%;
+  max-width: 460px;
+}
+#tvcm .container .top .cmmovie a .cmpos {
   position: relative;
 }
-#tvcm .container .cmmovie .cmpos .mark {
+#tvcm .container .top .cmmovie a .cmpos .mark {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1;
+  z-index: 2;
 }
-#tvcm .container .cmbottom {
-  width: 100%;
+#tvcm .container .top .cmmovie a .cmpos .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: solid 2px black;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #FA4616;
+}
+#tvcm .container .top .cmbottom {
+  margin-top: -1px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+#tvcm .container .top .cmbottom .cmbox {
+  position: relative;
+  margin: 0 auto 60px;
+  width: 348px;
+  height: 68px;
+}
+#tvcm .container .top .cmbottom .cmbox::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  z-index: 1;
+  width: 340px;
+  height: 60px;
+  border: 2px solid #333333;
+  background-color: #C6C6C6;
+  box-sizing: border-box;
+}
+#tvcm .container .top .cmbottom .cmbox .cmboxinner {
+  position: relative;
+  width: 342px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border: 2px solid #333333;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+#tvcm .container .top .cmbottom .cmbox .cmboxinner:hover {
+  background-color: #E94709;
+  color: #fff;
+  transform: translate(6px, 6px);
 }/*# sourceMappingURL=main.css.map */
