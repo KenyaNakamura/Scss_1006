@@ -144,4 +144,29 @@ header .nav ul li a .img3 {
 }
 .subright .btn .arr-right::after {
   content: "";
+}
+
+#tvcm {
+  text-align: center;
+}
+#tvcm .container {
+  display: block;
+}
+#tvcm .container .title h1 {
+  width: 100%;
+}
+#tvcm .container .cmmovie {
+  display: flex;
+}
+#tvcm .container .cmmovie .cmpos {
+  position: relative;
+}
+#tvcm .container .cmmovie .cmpos .mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+#tvcm .container .cmbottom {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

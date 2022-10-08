@@ -55,7 +55,7 @@
 
 // sub-contents ここから 
 .subright {
-  
+
 
     .btn {
         // border: solid 1px black;
@@ -65,10 +65,10 @@
         // text-align: center;
         // padding: 10px 0;
 
-        .arr-right{
+        .arr-right {
             font-size: 14px;
-        
-            &::after{
+
+            &::after {
                 content: '';
                 // // display: inline-block;
                 // width: 15px;
@@ -84,3 +84,36 @@
 // sub-contents ここまで   
 
 
+#tvcm {
+    text-align: center;
+
+    .container {
+        .title {
+            h1 {
+                width: 100%;
+            }
+        }
+
+        display: block;
+
+        .cmmovie {
+            display: flex;
+
+            .cmpos {
+                position: relative;
+
+                .mark {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 1;
+                }
+            }
+
+        }
+
+        .cmbottom {
+            width: 100%;
+        }
+    }
+}
