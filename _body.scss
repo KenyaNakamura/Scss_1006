@@ -95,216 +95,224 @@
         flex-grow: 1;
 
         .subright {
-            width: 60%;
-        }
-    }
-
-    .btn {
-        font-size: 13px;
-        border: solid 1px lightgrey;
-        border-radius: 5px;
-        padding: 5px 0;
-        text-align: center;
-
-
-    }
-
-    .btn01,
-    .btn02 {
-        margin-bottom: 10px;
-    }
-
-}
-.btn{
-    position: relative;
-}
-.logo1::before {
-    content: "";
-    // position: absolute;
-    background-image: url(/img/icon01.svg);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 12px auto;
-    vertical-align: middle;
-    margin-right: 3.75%;
-}
-.logo2::before{
-    @extend .logo1;
-    background-image: url(/img/icon02.svg);
-}
-.logo3::before{
-    @extend .logo1;
-    background-image: url(/img/icon03.svg);
-    background-size: 18px auto;
-}
-
-
-.arr-right::after {
-
-    content: url(/img/arr-right.png);
-    margin-left: 3.75%;
-    width: 16px;
-
-}
-
-// sub-contents ここまで   
-
-// tvcm
-#tvcm {
-    padding-right: 20px;
-    padding-left: 20px;
-
-    .container {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto 50px;
-        padding: 20px;
-
-        // 後ろの背景色
-        .backbox1 {
             width: 50%;
-            height: 50%;
-            background: #E94709;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
         }
 
-        .backbox2 {
-            @extend .backbox1;
-            background: #005DA7;
-            left: 50%;
-        }
+        .btn {
+            font-size: 13px;
+            border: solid 1px lightgrey;
+            border-radius: 5px;
+            padding: 5px 0;
+            text-align: center;
 
-        .backbox3 {
-            @extend .backbox1;
-            background: #006C3B;
-            top: 50%;
-        }
-
-        .backbox4 {
-            @extend .backbox1;
-            background: #F8B300;
-            top: 50%;
-            left: 50%;
-        }
-
-
-
-        .top {
-            padding-top: 80px;
-            background-color: white;
-
-            .title {
-                h1 {
-                    width: 489px;
-                    margin: 0 auto;
-                }
+            .btn-icon {
+                height: 16px;
+                vertical-align: middle;
+                padding-right: 1%;
             }
 
-            display: block;
 
-            .cmmovie {
-                display: flex;
-                padding-top: 30px;
-                padding-bottom: 41px;
-                justify-content: center;
-                align-items: center;
 
-                .movie-right {
-                    width: 39%;
-                    margin-left: 3%;
-                    text-align: left;
+        }
 
-                    h2 {
-                        font-weight: bold;
+        .btn01,
+        .btn02 {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    // .btn{
+    //     position: relative;
+    // }
+    // .logo1::before {
+    //     content: "";
+    //     // position: absolute;
+    //     background-image: url(/img/icon01.svg);
+    //     width: 20px;
+    //     height: 20px;
+    //     display: inline-block;
+    //     background-repeat: no-repeat;
+    //     background-position: left center;
+    //     background-size: 12px auto;
+    //     vertical-align: middle;
+    //     margin-right: 3.75%;
+    // }
+    // .logo2::before{
+    //     @extend .logo1;
+    //     background-image: url(/img/icon02.svg);
+    // }
+    // .logo3::before{
+    //     @extend .logo1;
+    //     background-image: url(/img/icon03.svg);
+    //     background-size: 18px auto;
+    // }
+
+
+    // .arr-right::after {
+
+    //     content: url(/img/arr-right.png);
+    //     margin-left: 3.75%;
+    //     width: 16px;
+
+    // }
+
+    // sub-contents ここまで   
+
+    // tvcm
+    #tvcm {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            padding: 20px;
+
+            // 後ろの背景色
+            .backbox1 {
+                width: 50%;
+                height: 50%;
+                background: #E94709;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            .backbox2 {
+                @extend .backbox1;
+                background: #005DA7;
+                left: 50%;
+            }
+
+            .backbox3 {
+                @extend .backbox1;
+                background: #006C3B;
+                top: 50%;
+            }
+
+            .backbox4 {
+                @extend .backbox1;
+                background: #F8B300;
+                top: 50%;
+                left: 50%;
+            }
+
+
+
+            .top {
+                padding-top: 80px;
+                background-color: white;
+
+                .title {
+                    h1 {
+                        width: 489px;
+                        margin: 0 auto;
                     }
                 }
 
-                a {
-                    width: 40%;
-                    max-width: 460px;
-                    position: relative;
+                display: block;
 
-                    &:hover {
-                        img {
-                            opacity: 70%;
+                .cmmovie {
+                    display: flex;
+                    padding-top: 30px;
+                    padding-bottom: 41px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .movie-right {
+                        width: 39%;
+                        margin-left: 3%;
+                        text-align: left;
+
+                        h2 {
+                            font-weight: bold;
+                        }
+                    }
+
+                    a {
+                        width: 40%;
+                        max-width: 460px;
+                        position: relative;
+
+                        &:hover {
+                            img {
+                                opacity: 70%;
+                            }
+
+                            &::after {
+                                background-color: #00AEEF;
+                            }
+
                         }
 
                         &::after {
-                            background-color: #00AEEF;
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            border: solid 2px black;
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 50%;
+                            z-index: 1;
+                            background: left 15px center no-repeat url(/img/icon-play.png);
+                            background-color: #FA4616;
+                            transform: translate(-50%, -50%);
+
                         }
-
-                    }
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        border: solid 2px black;
-                        width: 52px;
-                        height: 52px;
-                        border-radius: 50%;
-                        z-index: 1;
-                        background: left 15px center no-repeat url(/img/icon-play.png);
-                        background-color: #FA4616;
-                        transform: translate(-50%, -50%);
 
                     }
 
                 }
 
-            }
+                .cmbottom {
+                    margin-top: -1px;
+                    padding-bottom: 20px;
+                    background-color: #fff;
 
-            .cmbottom {
-                margin-top: -1px;
-                padding-bottom: 20px;
-                background-color: #fff;
-
-                .cmbox {
-                    position: relative;
-                    margin: 0 auto 60px;
-                    width: 348px;
-                    height: 68px;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        top: 6px;
-                        right: 0;
-                        z-index: 1;
-                        width: 340px;
-                        height: 60px;
-                        border: 2px solid #333333;
-                        background-color: #C6C6C6;
-                        box-sizing: border-box;
-                    }
-
-                    .cmboxinner {
+                    .cmbox {
                         position: relative;
-                        width: 342px;
-                        height: 60px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        z-index: 2;
-                        border: 2px solid #333333;
-                        background-color: white;
-                        transition: .2s ease-in-out;
+                        margin: 0 auto 60px;
+                        width: 348px;
+                        height: 68px;
 
-                        &:hover {
-                            background-color: #E94709;
-                            color: #fff;
-                            transform: translate(6px, 6px);
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 6px;
+                            right: 0;
+                            z-index: 1;
+                            width: 340px;
+                            height: 60px;
+                            border: 2px solid #333333;
+                            background-color: #C6C6C6;
+                            box-sizing: border-box;
                         }
 
+                        .cmboxinner {
+                            position: relative;
+                            width: 342px;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 2;
+                            border: 2px solid #333333;
+                            background-color: white;
+                            transition: .2s ease-in-out;
+
+                            &:hover {
+                                background-color: #E94709;
+                                color: #fff;
+                                transform: translate(6px, 6px);
+                            }
 
 
+
+                        }
                     }
                 }
             }

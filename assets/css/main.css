@@ -177,63 +177,35 @@ header .nav ul li a .img3 {
   flex-grow: 1;
 }
 #sub-contents .subright-wrap .subright {
-  width: 60%;
+  width: 50%;
 }
-#sub-contents .btn {
+#sub-contents .subright-wrap .btn {
   font-size: 13px;
   border: solid 1px lightgrey;
   border-radius: 5px;
   padding: 5px 0;
   text-align: center;
 }
-#sub-contents .btn01,
-#sub-contents .btn02 {
+#sub-contents .subright-wrap .btn .btn-icon {
+  height: 16px;
+  vertical-align: middle;
+  padding-right: 1%;
+}
+#sub-contents .subright-wrap .btn01,
+#sub-contents .subright-wrap .btn02 {
   margin-bottom: 10px;
 }
-
-.btn {
-  position: relative;
-}
-
-.logo1::before, .logo3::before, .logo2::before {
-  content: "";
-  background-image: url(/img/icon01.svg);
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 12px auto;
-  vertical-align: middle;
-  margin-right: 3.75%;
-}
-
-.logo2::before {
-  background-image: url(/img/icon02.svg);
-}
-
-.logo3::before {
-  background-image: url(/img/icon03.svg);
-  background-size: 18px auto;
-}
-
-.arr-right::after {
-  content: url(/img/arr-right.png);
-  margin-left: 3.75%;
-  width: 16px;
-}
-
-#tvcm {
+#sub-contents #tvcm {
   padding-right: 20px;
   padding-left: 20px;
 }
-#tvcm .container {
+#sub-contents #tvcm .container {
   position: relative;
   max-width: 1200px;
   margin: 0 auto 50px;
   padding: 20px;
 }
-#tvcm .container .backbox1, #tvcm .container .backbox4, #tvcm .container .backbox3, #tvcm .container .backbox2 {
+#sub-contents #tvcm .container .backbox1, #sub-contents #tvcm .container .backbox4, #sub-contents #tvcm .container .backbox3, #sub-contents #tvcm .container .backbox2 {
   width: 50%;
   height: 50%;
   background: #E94709;
@@ -242,55 +214,55 @@ header .nav ul li a .img3 {
   left: 0;
   z-index: -1;
 }
-#tvcm .container .backbox2 {
+#sub-contents #tvcm .container .backbox2 {
   background: #005DA7;
   left: 50%;
 }
-#tvcm .container .backbox3 {
+#sub-contents #tvcm .container .backbox3 {
   background: #006C3B;
   top: 50%;
 }
-#tvcm .container .backbox4 {
+#sub-contents #tvcm .container .backbox4 {
   background: #F8B300;
   top: 50%;
   left: 50%;
 }
-#tvcm .container .top {
+#sub-contents #tvcm .container .top {
   padding-top: 80px;
   background-color: white;
   display: block;
 }
-#tvcm .container .top .title h1 {
+#sub-contents #tvcm .container .top .title h1 {
   width: 489px;
   margin: 0 auto;
 }
-#tvcm .container .top .cmmovie {
+#sub-contents #tvcm .container .top .cmmovie {
   display: flex;
   padding-top: 30px;
   padding-bottom: 41px;
   justify-content: center;
   align-items: center;
 }
-#tvcm .container .top .cmmovie .movie-right {
+#sub-contents #tvcm .container .top .cmmovie .movie-right {
   width: 39%;
   margin-left: 3%;
   text-align: left;
 }
-#tvcm .container .top .cmmovie .movie-right h2 {
+#sub-contents #tvcm .container .top .cmmovie .movie-right h2 {
   font-weight: bold;
 }
-#tvcm .container .top .cmmovie a {
+#sub-contents #tvcm .container .top .cmmovie a {
   width: 40%;
   max-width: 460px;
   position: relative;
 }
-#tvcm .container .top .cmmovie a:hover img {
+#sub-contents #tvcm .container .top .cmmovie a:hover img {
   opacity: 70%;
 }
-#tvcm .container .top .cmmovie a:hover::after {
+#sub-contents #tvcm .container .top .cmmovie a:hover::after {
   background-color: #00AEEF;
 }
-#tvcm .container .top .cmmovie a::after {
+#sub-contents #tvcm .container .top .cmmovie a::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -304,18 +276,18 @@ header .nav ul li a .img3 {
   background-color: #FA4616;
   transform: translate(-50%, -50%);
 }
-#tvcm .container .top .cmbottom {
+#sub-contents #tvcm .container .top .cmbottom {
   margin-top: -1px;
   padding-bottom: 20px;
   background-color: #fff;
 }
-#tvcm .container .top .cmbottom .cmbox {
+#sub-contents #tvcm .container .top .cmbottom .cmbox {
   position: relative;
   margin: 0 auto 60px;
   width: 348px;
   height: 68px;
 }
-#tvcm .container .top .cmbottom .cmbox::after {
+#sub-contents #tvcm .container .top .cmbottom .cmbox::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -327,7 +299,7 @@ header .nav ul li a .img3 {
   background-color: #C6C6C6;
   box-sizing: border-box;
 }
-#tvcm .container .top .cmbottom .cmbox .cmboxinner {
+#sub-contents #tvcm .container .top .cmbottom .cmbox .cmboxinner {
   position: relative;
   width: 342px;
   height: 60px;
@@ -339,7 +311,7 @@ header .nav ul li a .img3 {
   background-color: white;
   transition: 0.2s ease-in-out;
 }
-#tvcm .container .top .cmbottom .cmbox .cmboxinner:hover {
+#sub-contents #tvcm .container .top .cmbottom .cmbox .cmboxinner:hover {
   background-color: #E94709;
   color: #fff;
   transform: translate(6px, 6px);
