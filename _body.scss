@@ -1,7 +1,8 @@
 // mainImg　ここから
-#main{
+#main {
     position: relative;
 }
+
 #mainImg p img {
     width: 100%;
     height: auto;
@@ -59,18 +60,24 @@
 // sub-contents ここから 
 #sub-contents {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    margin-top: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 15px;
     margin-bottom: 5vw;
 
     .subleft-wrap {
+        display: flex;
+        justify-content: end;
         border-right: solid 1px lightgrey;
-        width: 50%;
+        width: 30%;
         height: auto;
         padding-right: 10px;
+        flex-basis: 0;
+        flex-grow: 1;
+
+        .subleft {
+            width: 50%;
+        }
     }
 
     .subleft img {
@@ -84,10 +91,16 @@
         width: 50%;
         height: auto;
         padding-left: 10px;
+        flex-basis: 0;
+        flex-grow: 1;
+
+        .subright {
+            width: 60%;
+        }
     }
 
     .btn {
-        font-size: 16px;
+        font-size: 13px;
         border: solid 1px lightgrey;
         border-radius: 5px;
         padding: 5px 0;
@@ -102,25 +115,89 @@
     }
 
 }
+.btn{
+    position: relative;
+}
+.logo1::before {
+    content: "";
+    // position: absolute;
+    background-image: url(/img/icon01.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 12px auto;
+    vertical-align: middle;
+    margin-right: 3.75%;
+}
+.logo2::before{
+    @extend .logo1;
+    background-image: url(/img/icon02.svg);
+}
+.logo3::before{
+    @extend .logo1;
+    background-image: url(/img/icon03.svg);
+    background-size: 18px auto;
+}
 
-span::after {
 
-    content: url(./img/arr-right.png);
+.arr-right::after {
+
+    content: url(/img/arr-right.png);
+    margin-left: 3.75%;
     width: 16px;
+
 }
 
 // sub-contents ここまで   
 
-
+// tvcm
 #tvcm {
-    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
 
     .container {
+        position: relative;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0 auto 50px;
+        padding: 20px;
+
+        // 後ろの背景色
+        .backbox1 {
+            width: 50%;
+            height: 50%;
+            background: #E94709;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .backbox2 {
+            @extend .backbox1;
+            background: #005DA7;
+            left: 50%;
+        }
+
+        .backbox3 {
+            @extend .backbox1;
+            background: #006C3B;
+            top: 50%;
+        }
+
+        .backbox4 {
+            @extend .backbox1;
+            background: #F8B300;
+            top: 50%;
+            left: 50%;
+        }
+
+
 
         .top {
             padding-top: 80px;
+            background-color: white;
 
             .title {
                 h1 {
@@ -151,30 +228,35 @@ span::after {
                 a {
                     width: 40%;
                     max-width: 460px;
+                    position: relative;
 
-                    .cmpos {
-                        position: relative;
-
-                        .mark {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            z-index: 2;
-
+                    &:hover {
+                        img {
+                            opacity: 70%;
                         }
 
-                        .circle {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            border: solid 2px black;
-                            width: 52px;
-                            height: 52px;
-                            border-radius: 50%;
-                            z-index: 1;
-                            background-color: #FA4616;
+                        &::after {
+                            background-color: #00AEEF;
                         }
+
                     }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        border: solid 2px black;
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 50%;
+                        z-index: 1;
+                        background: left 15px center no-repeat url(/img/icon-play.png);
+                        background-color: #FA4616;
+                        transform: translate(-50%, -50%);
+
+                    }
+
                 }
 
             }
