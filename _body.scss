@@ -422,14 +422,14 @@
 
     .photoanime {
         position: relative;
-        margin-bottom: 74px;
+        margin-bottom: 50px;
         padding-bottom: 63.14%;
         overflow: hidden;
 
         .intro-ph {
             opacity: 0;
             /* フェードインしたいので最初は非表示 */
-            transition: all 2s;
+            // transition: all 2s;
             /* 1秒かけてアニメーション */
         }
 

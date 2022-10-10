@@ -8,7 +8,7 @@ $(function () {
             if (scroll > position - windowHeight + 200) {
                 $(function () {
                     $('.intro-ph').each(function (i) {
-                        $(this).delay(i * 800).queue(function () {
+                        $(this).delay(i * 400).queue(function () {
                             $(this).addClass('fadein');
                         });
                     });
