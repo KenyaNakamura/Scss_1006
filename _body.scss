@@ -1,22 +1,28 @@
 // mainImg　ここから
 #main {
     position: relative;
-}
 
-#mainImg p img {
-    width: 100%;
-    height: auto;
+    #mainImg {
+        p img {
+            width: 100%;
+            height: auto;
+        }
+
+        .showPC.showTAB {
+            display: block !important;
+        }
+
+        .showSP {
+            display: none !important;
+        }
+    }
 }
 
 .newColor {
-    width: 11.4vw;
-    height: 11.4vw;
     position: absolute;
-
     // 位置調整する
     top: -38vw;
     right: 5vw;
-
     cursor: pointer;
     z-index: 1;
 
@@ -26,8 +32,8 @@
 
     &::after {
         content: '';
-        width: 11.4vw;
-        height: 11.4vw;
+        width: 11vw;
+        height: 11vw;
         border: solid 2px black;
         background-color: gray;
         position: absolute;
@@ -36,40 +42,49 @@
         z-index: -1;
     }
 
-}
+    .newColorTxt {
+        width: 11vw;
+        height: 11vw;
+        border: solid 2px black;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s ease-in-out;
 
-.newColorTxt {
-    border: solid 2px black;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .2s ease-in-out;
+        .showPC.showTAB {
+            display: block !important;
+        }
 
-    img {
-        width: 8.8vw;
-        padding-bottom: 0.7vw;
-        margin-top: -1.4vw;
+        .showSP {
+            display: none !important;
+        }
+
+        img {
+            width: 8vw;
+            padding-bottom: 1vw;
+            margin-top: -1.5vw;
+        }
     }
-
-
 }
+
+
 
 //　mainImg ここまで
 
 // sub-contents ここから 
 #sub-contents {
     display: flex;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-top: 15px;
+    // padding-left: 5vw;
+    // padding-right: 5vw;
+    margin-top: 5vw;
     margin-bottom: 5vw;
 
     .subleft-wrap {
         display: flex;
         justify-content: end;
         border-right: solid 1px lightgrey;
-        width: 30%;
+        // width: 30%;
         height: auto;
         padding-right: 10px;
         flex-basis: 0;
@@ -91,15 +106,21 @@
         width: 50%;
         height: auto;
         padding-left: 10px;
-        flex-basis: 0;
-        flex-grow: 1;
+        display: flex;
+        justify-content: baseline;
+        // flex-basis: 0;
+        // flex-grow: 1;
 
         .subright {
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
 
         .btn {
-            font-size: 13px;
+            font-size: 15px;
+            font-weight: bold;
             border: solid 1px lightgrey;
             border-radius: 5px;
             padding: 5px 0;
@@ -111,8 +132,6 @@
                 padding-right: 1%;
             }
 
-
-
         }
 
         .btn01,
@@ -121,45 +140,46 @@
         }
 
     }
-
-    // .btn {
-    //     position: relative;
-    // }
-
-    // .logo1::before {
-    //     content: "";
-    //     // position: absolute;
-    //     background-image: url(/img/icon01.svg);
-    //     width: 20px;
-    //     height: 20px;
-    //     display: inline-block;
-    //     background-repeat: no-repeat;
-    //     background-position: left center;
-    //     background-size: 12px auto;
-    //     vertical-align: middle;
-    //     margin-right: 3.75%;
-    // }
-
-    // .logo2::before {
-    //     @extend .logo1;
-    //     background-image: url(/img/icon02.svg);
-    // }
-
-    // .logo3::before {
-    //     @extend .logo1;
-    //     background-image: url(/img/icon03.svg);
-    //     background-size: 18px auto;
-    // }
-
-
-    // .arr-right::after {
-
-    //     content: url(/img/arr-right.png);
-    //     margin-left: 3.75%;
-    //     width: 16px;
-
-    // }
 }
+
+// .btn {
+//     position: relative;
+// }
+
+// .logo1::before {
+//     content: "";
+//     // position: absolute;
+//     background-image: url(/img/icon01.svg);
+//     width: 20px;
+//     height: 20px;
+//     display: inline-block;
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     background-size: 12px auto;
+//     vertical-align: middle;
+//     margin-right: 3.75%;
+// }
+
+// .logo2::before {
+//     @extend .logo1;
+//     background-image: url(/img/icon02.svg);
+// }
+
+// .logo3::before {
+//     @extend .logo1;
+//     background-image: url(/img/icon03.svg);
+//     background-size: 18px auto;
+// }
+
+
+// .arr-right::after {
+
+//     content: url(/img/arr-right.png);
+//     margin-left: 3.75%;
+//     width: 16px;
+
+// }
+// }
 
 // sub-contents ここまで   
 
@@ -330,7 +350,8 @@
         position: relative;
         height: 70px;
 
-        .textanime1,.textanime2 {
+        .textanime1,
+        .textanime2 {
             display: none;
             position: absolute;
             bottom: 0;
@@ -368,8 +389,26 @@
             }
         }
 
+        // .textanime1 {
+        //     .intro-text01 {
+        //          opacity: 0; 
+        //         transition: .2s;
+        //     }
+        //     .intro-text01.fadein{
+        //          opacity: 1;
+        //     }
+        // }
+
         .textanime2 {
             display: none;
+            // .intro-text02{
+            //     opacity: 0; 	/* フェードインしたいので最初は非表示 */
+            //     transition:  .2s;
+
+            // }
+            // .intro-text02.fadein{
+            //     opacity: 1;
+            // }
         }
 
         .txt {
@@ -387,6 +426,16 @@
         padding-bottom: 63.14%;
         overflow: hidden;
 
+        .intro-ph {
+            opacity: 0;
+            /* フェードインしたいので最初は非表示 */
+            transition: all 2s;
+            /* 1秒かけてアニメーション */
+        }
+
+        .intro-ph.fadein {
+            opacity: 1;
+        }
 
         .animetion2 {
             position: absolute;
