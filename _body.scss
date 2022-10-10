@@ -322,3 +322,166 @@
         }
     }
 }
+
+
+// ここから最後
+#imgs {
+    h4 {
+        position: relative;
+        height: 70px;
+
+        .textanime1,.textanime2 {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .animetion {
+                display: inline-block;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+
+            }
+
+            .jsanime {
+                -webkit-animation: font 0.2s ease-in-out forwards;
+                animation: font 0.2s ease-in-out forwards;
+
+            }
+
+            .marg {
+                margin-left: 10px;
+            }
+        }
+
+        .textanime2 {
+            display: none;
+        }
+
+        .txt {
+            width: 83%;
+            position: absolute;
+            left: 50%;
+            z-index: 2;
+            transform: translateX(-50%);
+        }
+    }
+
+    .photoanime {
+        position: relative;
+        margin-bottom: 74px;
+        padding-bottom: 63.14%;
+        overflow: hidden;
+
+
+        .animetion2 {
+            position: absolute;
+            z-index: 1;
+            // opacity: 0;
+            // -webkit-transform: scale(0);
+            // transform: scale(0);
+        }
+
+        .anime1 {
+            top: 3.6%;
+            left: 30%;
+            width: 18.23%;
+        }
+
+        .anime2 {
+            top: 3.5%;
+            right: 21%;
+            z-index: 2;
+            width: 33.09%;
+        }
+
+        .anime3 {
+            top: 3.3%;
+            right: 6.6%;
+            width: 20.95%;
+        }
+
+        .anime4 {
+            top: 8.2%;
+            left: 0%;
+            z-index: 8;
+            width: 27.35%;
+        }
+
+        .anime5 {
+            top: 9.4%;
+            left: 25.6%;
+            z-index: 2;
+            width: 20%;
+        }
+
+        .anime6 {
+            top: 45.91%;
+            left: 0;
+            z-index: 9;
+            width: 50%;
+
+        }
+
+        .anime7 {
+            top: 32%;
+            left: 28.5%;
+            z-index: 5;
+            width: 26.32%;
+
+        }
+
+        .anime8 {
+            top: 50.11%;
+            left: 48.6%;
+            z-index: 4;
+            width: 14.4%;
+        }
+
+        .anime9 {
+            top: 23%;
+            right: 23%;
+            z-index: 2;
+            width: 29.41%;
+
+        }
+
+        .anime10 {
+            top: 19.1%;
+            right: 0;
+            width: 31.76%;
+
+        }
+
+        .anime11 {
+            top: 32.40%;
+            right: 37.68%;
+            width: 9.35%;
+
+        }
+
+        .anime12 {
+            top: 79.86%;
+            left: 60.64%;
+            z-index: 4;
+            width: 13.14%;
+
+        }
+
+
+    }
+}

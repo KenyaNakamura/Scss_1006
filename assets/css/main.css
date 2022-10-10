@@ -316,4 +316,129 @@ header .nav ul li a .img3 {
   background-color: #E94709;
   color: #fff;
   transform: translate(6px, 6px);
+}
+
+#imgs h4 {
+  position: relative;
+  height: 70px;
+}
+#imgs h4 .textanime1, #imgs h4 .textanime2 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#imgs h4 .textanime1 .animetion, #imgs h4 .textanime2 .animetion {
+  display: inline-block;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#imgs h4 .textanime1 .jsanime, #imgs h4 .textanime2 .jsanime {
+  -webkit-animation: font 0.2s ease-in-out forwards;
+  animation: font 0.2s ease-in-out forwards;
+}
+#imgs h4 .textanime1 .marg, #imgs h4 .textanime2 .marg {
+  margin-left: 10px;
+}
+#imgs h4 .textanime2 {
+  display: none;
+}
+#imgs h4 .txt {
+  width: 83%;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+#imgs .photoanime {
+  position: relative;
+  margin-bottom: 74px;
+  padding-bottom: 63.14%;
+  overflow: hidden;
+}
+#imgs .photoanime .animetion2 {
+  position: absolute;
+  z-index: 1;
+}
+#imgs .photoanime .anime1 {
+  top: 3.6%;
+  left: 30%;
+  width: 18.23%;
+}
+#imgs .photoanime .anime2 {
+  top: 3.5%;
+  right: 21%;
+  z-index: 2;
+  width: 33.09%;
+}
+#imgs .photoanime .anime3 {
+  top: 3.3%;
+  right: 6.6%;
+  width: 20.95%;
+}
+#imgs .photoanime .anime4 {
+  top: 8.2%;
+  left: 0%;
+  z-index: 8;
+  width: 27.35%;
+}
+#imgs .photoanime .anime5 {
+  top: 9.4%;
+  left: 25.6%;
+  z-index: 2;
+  width: 20%;
+}
+#imgs .photoanime .anime6 {
+  top: 45.91%;
+  left: 0;
+  z-index: 9;
+  width: 50%;
+}
+#imgs .photoanime .anime7 {
+  top: 32%;
+  left: 28.5%;
+  z-index: 5;
+  width: 26.32%;
+}
+#imgs .photoanime .anime8 {
+  top: 50.11%;
+  left: 48.6%;
+  z-index: 4;
+  width: 14.4%;
+}
+#imgs .photoanime .anime9 {
+  top: 23%;
+  right: 23%;
+  z-index: 2;
+  width: 29.41%;
+}
+#imgs .photoanime .anime10 {
+  top: 19.1%;
+  right: 0;
+  width: 31.76%;
+}
+#imgs .photoanime .anime11 {
+  top: 32.4%;
+  right: 37.68%;
+  width: 9.35%;
+}
+#imgs .photoanime .anime12 {
+  top: 79.86%;
+  left: 60.64%;
+  z-index: 4;
+  width: 13.14%;
 }/*# sourceMappingURL=main.css.map */
