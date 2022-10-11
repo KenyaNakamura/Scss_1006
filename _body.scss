@@ -1,3 +1,27 @@
+// レスポンシブ対応（スマホ）
+    // ブレイクポイント
+    $sp: 767px;
+
+    @mixin mobile {
+        @media screen and (max-width: $sp){
+            @content;
+        }
+    }
+
+body {
+    // TOPへ戻る　ここから
+    position: relative;
+
+    #page_top {
+        color: rgba(110, 109, 109, 0.906);
+        font-size: 50px;
+        z-index: 100;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+    // TOPへ戻る　ここまで
+
 // mainImg　ここから
 #main {
     position: relative;
@@ -9,12 +33,21 @@
         }
 
         .showPC.showTAB {
-            display: block !important;
+            display: block;
+
+            @include mobile {
+                display: none;
+            }
         }
 
         .showSP {
-            display: none !important;
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
         }
+
     }
 }
 
@@ -22,9 +55,13 @@
     position: absolute;
     // 位置調整する
     top: -38vw;
-    right: 5vw;
+    right: 7vw;
     cursor: pointer;
     z-index: 1;
+    @include mobile{
+        top: -12vw;
+        // right: 5vw;
+    }
 
     &:hover .newColorTxt {
         transform: translate(8px, 8px);
@@ -40,6 +77,11 @@
         top: 8px;
         right: -8px;
         z-index: -1;
+        @include mobile{
+            width: 87vw;
+            height: 21vw;
+    
+        }
     }
 
     .newColorTxt {
@@ -51,19 +93,32 @@
         justify-content: center;
         align-items: center;
         transition: .2s ease-in-out;
+        // @include mobile{
+        //     width: 87vw;
+        //     height: 21vw;
+        // }
 
         .showPC.showTAB {
-            display: block !important;
+            display: block;
+            @include mobile{
+                display: none;
+            }
         }
 
         .showSP {
-            display: none !important;
+            display: none;
+            @include mobile{
+                display: block;
+            }
         }
 
         img {
             width: 8vw;
             padding-bottom: 1vw;
             margin-top: -1.5vw;
+            // @include mobile{
+            //     max-width: 80vw;
+            // }
         }
     }
 }
@@ -533,4 +588,5 @@
 
 
     }
+}
 }

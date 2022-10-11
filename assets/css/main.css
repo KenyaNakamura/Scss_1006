@@ -97,31 +97,56 @@ header .nav ul li a .img3 {
   opacity: 0;
 }
 
-#main {
+body {
   position: relative;
 }
-#main #mainImg p img {
+body #page_top {
+  color: rgba(110, 109, 109, 0.906);
+  font-size: 50px;
+  z-index: 100;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+body #main {
+  position: relative;
+}
+body #main #mainImg p img {
   width: 100%;
   height: auto;
 }
-#main #mainImg .showPC.showTAB {
-  display: block !important;
+body #main #mainImg .showPC.showTAB {
+  display: block;
 }
-#main #mainImg .showSP {
-  display: none !important;
+@media screen and (max-width: 767px) {
+  body #main #mainImg .showPC.showTAB {
+    display: none;
+  }
 }
-
-.newColor {
+body #main #mainImg .showSP {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  body #main #mainImg .showSP {
+    display: block;
+  }
+}
+body .newColor {
   position: absolute;
   top: -38vw;
-  right: 5vw;
+  right: 7vw;
   cursor: pointer;
   z-index: 1;
 }
-.newColor:hover .newColorTxt {
+@media screen and (max-width: 767px) {
+  body .newColor {
+    top: -12vw;
+  }
+}
+body .newColor:hover .newColorTxt {
   transform: translate(8px, 8px);
 }
-.newColor::after {
+body .newColor::after {
   content: "";
   width: 11vw;
   height: 11vw;
@@ -132,7 +157,13 @@ header .nav ul li a .img3 {
   right: -8px;
   z-index: -1;
 }
-.newColor .newColorTxt {
+@media screen and (max-width: 767px) {
+  body .newColor::after {
+    width: 87vw;
+    height: 21vw;
+  }
+}
+body .newColor .newColorTxt {
   width: 11vw;
   height: 11vw;
   border: solid 2px black;
@@ -142,24 +173,33 @@ header .nav ul li a .img3 {
   align-items: center;
   transition: 0.2s ease-in-out;
 }
-.newColor .newColorTxt .showPC.showTAB {
-  display: block !important;
+body .newColor .newColorTxt .showPC.showTAB {
+  display: block;
 }
-.newColor .newColorTxt .showSP {
-  display: none !important;
+@media screen and (max-width: 767px) {
+  body .newColor .newColorTxt .showPC.showTAB {
+    display: none;
+  }
 }
-.newColor .newColorTxt img {
+body .newColor .newColorTxt .showSP {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  body .newColor .newColorTxt .showSP {
+    display: block;
+  }
+}
+body .newColor .newColorTxt img {
   width: 8vw;
   padding-bottom: 1vw;
   margin-top: -1.5vw;
 }
-
-#sub-contents {
+body #sub-contents {
   display: flex;
   margin-top: 5vw;
   margin-bottom: 5vw;
 }
-#sub-contents .subleft-wrap {
+body #sub-contents .subleft-wrap {
   display: flex;
   justify-content: end;
   border-right: solid 1px lightgrey;
@@ -168,29 +208,29 @@ header .nav ul li a .img3 {
   flex-basis: 0;
   flex-grow: 1;
 }
-#sub-contents .subleft-wrap .subleft {
+body #sub-contents .subleft-wrap .subleft {
   width: 50%;
 }
-#sub-contents .subleft img {
+body #sub-contents .subleft img {
   width: 100%;
   height: auto;
   border: solid 1px lightgrey;
   border-radius: 5px;
 }
-#sub-contents .subright-wrap {
+body #sub-contents .subright-wrap {
   width: 50%;
   height: auto;
   padding-left: 10px;
   display: flex;
   justify-content: baseline;
 }
-#sub-contents .subright-wrap .subright {
+body #sub-contents .subright-wrap .subright {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#sub-contents .subright-wrap .btn {
+body #sub-contents .subright-wrap .btn {
   font-size: 15px;
   font-weight: bold;
   border: solid 1px lightgrey;
@@ -198,27 +238,26 @@ header .nav ul li a .img3 {
   padding: 5px 0;
   text-align: center;
 }
-#sub-contents .subright-wrap .btn .btn-icon {
+body #sub-contents .subright-wrap .btn .btn-icon {
   height: 16px;
   vertical-align: middle;
   padding-right: 1%;
 }
-#sub-contents .subright-wrap .btn01,
-#sub-contents .subright-wrap .btn02 {
+body #sub-contents .subright-wrap .btn01,
+body #sub-contents .subright-wrap .btn02 {
   margin-bottom: 10px;
 }
-
-#tvcm {
+body #tvcm {
   padding-right: 20px;
   padding-left: 20px;
 }
-#tvcm .container {
+body #tvcm .container {
   position: relative;
   max-width: 1200px;
   margin: 0 auto 50px;
   padding: 20px;
 }
-#tvcm .container .backbox1, #tvcm .container .backbox4, #tvcm .container .backbox3, #tvcm .container .backbox2 {
+body #tvcm .container .backbox1, body #tvcm .container .backbox4, body #tvcm .container .backbox3, body #tvcm .container .backbox2 {
   width: 50%;
   height: 50%;
   background: #E94709;
@@ -227,55 +266,55 @@ header .nav ul li a .img3 {
   left: 0;
   z-index: -1;
 }
-#tvcm .container .backbox2 {
+body #tvcm .container .backbox2 {
   background: #005DA7;
   left: 50%;
 }
-#tvcm .container .backbox3 {
+body #tvcm .container .backbox3 {
   background: #006C3B;
   top: 50%;
 }
-#tvcm .container .backbox4 {
+body #tvcm .container .backbox4 {
   background: #F8B300;
   top: 50%;
   left: 50%;
 }
-#tvcm .container .top {
+body #tvcm .container .top {
   padding-top: 80px;
   background-color: white;
   display: block;
 }
-#tvcm .container .top .title h1 {
+body #tvcm .container .top .title h1 {
   width: 489px;
   margin: 0 auto;
 }
-#tvcm .container .top .cmmovie {
+body #tvcm .container .top .cmmovie {
   display: flex;
   padding-top: 30px;
   padding-bottom: 41px;
   justify-content: center;
   align-items: center;
 }
-#tvcm .container .top .cmmovie .movie-right {
+body #tvcm .container .top .cmmovie .movie-right {
   width: 39%;
   margin-left: 3%;
   text-align: left;
 }
-#tvcm .container .top .cmmovie .movie-right h2 {
+body #tvcm .container .top .cmmovie .movie-right h2 {
   font-weight: bold;
 }
-#tvcm .container .top .cmmovie a {
+body #tvcm .container .top .cmmovie a {
   width: 40%;
   max-width: 460px;
   position: relative;
 }
-#tvcm .container .top .cmmovie a:hover img {
+body #tvcm .container .top .cmmovie a:hover img {
   opacity: 70%;
 }
-#tvcm .container .top .cmmovie a:hover::after {
+body #tvcm .container .top .cmmovie a:hover::after {
   background-color: #00AEEF;
 }
-#tvcm .container .top .cmmovie a::after {
+body #tvcm .container .top .cmmovie a::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -289,18 +328,18 @@ header .nav ul li a .img3 {
   background-color: #FA4616;
   transform: translate(-50%, -50%);
 }
-#tvcm .container .top .cmbottom {
+body #tvcm .container .top .cmbottom {
   margin-top: -1px;
   padding-bottom: 20px;
   background-color: #fff;
 }
-#tvcm .container .top .cmbottom .cmbox {
+body #tvcm .container .top .cmbottom .cmbox {
   position: relative;
   margin: 0 auto 60px;
   width: 348px;
   height: 68px;
 }
-#tvcm .container .top .cmbottom .cmbox::after {
+body #tvcm .container .top .cmbottom .cmbox::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -312,7 +351,7 @@ header .nav ul li a .img3 {
   background-color: #C6C6C6;
   box-sizing: border-box;
 }
-#tvcm .container .top .cmbottom .cmbox .cmboxinner {
+body #tvcm .container .top .cmbottom .cmbox .cmboxinner {
   position: relative;
   width: 342px;
   height: 60px;
@@ -324,18 +363,17 @@ header .nav ul li a .img3 {
   background-color: white;
   transition: 0.2s ease-in-out;
 }
-#tvcm .container .top .cmbottom .cmbox .cmboxinner:hover {
+body #tvcm .container .top .cmbottom .cmbox .cmboxinner:hover {
   background-color: #E94709;
   color: #fff;
   transform: translate(6px, 6px);
 }
-
-#imgs h4 {
+body #imgs h4 {
   position: relative;
   height: 70px;
 }
-#imgs h4 .textanime1,
-#imgs h4 .textanime2 {
+body #imgs h4 .textanime1,
+body #imgs h4 .textanime2 {
   display: none;
   position: absolute;
   bottom: 0;
@@ -355,112 +393,112 @@ header .nav ul li a .img3 {
   width: 100%;
   height: 100%;
 }
-#imgs h4 .textanime1 .animetion,
-#imgs h4 .textanime2 .animetion {
+body #imgs h4 .textanime1 .animetion,
+body #imgs h4 .textanime2 .animetion {
   display: inline-block;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-#imgs h4 .textanime1 .jsanime,
-#imgs h4 .textanime2 .jsanime {
+body #imgs h4 .textanime1 .jsanime,
+body #imgs h4 .textanime2 .jsanime {
   -webkit-animation: font 0.2s ease-in-out forwards;
   animation: font 0.2s ease-in-out forwards;
 }
-#imgs h4 .textanime1 .marg,
-#imgs h4 .textanime2 .marg {
+body #imgs h4 .textanime1 .marg,
+body #imgs h4 .textanime2 .marg {
   margin-left: 10px;
 }
-#imgs h4 .textanime2 {
+body #imgs h4 .textanime2 {
   display: none;
 }
-#imgs h4 .txt {
+body #imgs h4 .txt {
   width: 83%;
   position: absolute;
   left: 50%;
   z-index: 2;
   transform: translateX(-50%);
 }
-#imgs .photoanime {
+body #imgs .photoanime {
   position: relative;
   margin-bottom: 50px;
   padding-bottom: 63.14%;
   overflow: hidden;
 }
-#imgs .photoanime .intro-ph {
+body #imgs .photoanime .intro-ph {
   opacity: 0;
   /* フェードインしたいので最初は非表示 */
   /* 1秒かけてアニメーション */
 }
-#imgs .photoanime .intro-ph.fadein {
+body #imgs .photoanime .intro-ph.fadein {
   opacity: 1;
 }
-#imgs .photoanime .animetion2 {
+body #imgs .photoanime .animetion2 {
   position: absolute;
   z-index: 1;
 }
-#imgs .photoanime .anime1 {
+body #imgs .photoanime .anime1 {
   top: 3.6%;
   left: 30%;
   width: 18.23%;
 }
-#imgs .photoanime .anime2 {
+body #imgs .photoanime .anime2 {
   top: 3.5%;
   right: 21%;
   z-index: 2;
   width: 33.09%;
 }
-#imgs .photoanime .anime3 {
+body #imgs .photoanime .anime3 {
   top: 3.3%;
   right: 6.6%;
   width: 20.95%;
 }
-#imgs .photoanime .anime4 {
+body #imgs .photoanime .anime4 {
   top: 8.2%;
   left: 0%;
   z-index: 8;
   width: 27.35%;
 }
-#imgs .photoanime .anime5 {
+body #imgs .photoanime .anime5 {
   top: 9.4%;
   left: 25.6%;
   z-index: 2;
   width: 20%;
 }
-#imgs .photoanime .anime6 {
+body #imgs .photoanime .anime6 {
   top: 45.91%;
   left: 0;
   z-index: 9;
   width: 50%;
 }
-#imgs .photoanime .anime7 {
+body #imgs .photoanime .anime7 {
   top: 32%;
   left: 28.5%;
   z-index: 5;
   width: 26.32%;
 }
-#imgs .photoanime .anime8 {
+body #imgs .photoanime .anime8 {
   top: 50.11%;
   left: 48.6%;
   z-index: 4;
   width: 14.4%;
 }
-#imgs .photoanime .anime9 {
+body #imgs .photoanime .anime9 {
   top: 23%;
   right: 23%;
   z-index: 2;
   width: 29.41%;
 }
-#imgs .photoanime .anime10 {
+body #imgs .photoanime .anime10 {
   top: 19.1%;
   right: 0;
   width: 31.76%;
 }
-#imgs .photoanime .anime11 {
+body #imgs .photoanime .anime11 {
   top: 32.4%;
   right: 37.68%;
   width: 9.35%;
 }
-#imgs .photoanime .anime12 {
+body #imgs .photoanime .anime12 {
   top: 79.86%;
   left: 60.64%;
   z-index: 4;
