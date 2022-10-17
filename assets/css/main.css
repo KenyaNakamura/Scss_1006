@@ -26,7 +26,7 @@ header .logoarea .mf_finder_searchBox_submit {
   width: 30px;
   height: 30px;
   padding: 0;
-  background-image: url(/img/bar_button.png);
+  background-image: url(../../img/bar_button.png);
   margin-right: 10px;
 }
 header .menu {
@@ -324,7 +324,7 @@ body #tvcm .container .top .cmmovie a::after {
   height: 52px;
   border-radius: 50%;
   z-index: 1;
-  background: left 15px center no-repeat url(/img/icon-play.png);
+  background: left 15px center no-repeat url(../../img/icon-play.png);
   background-color: #FA4616;
   transform: translate(-50%, -50%);
 }
